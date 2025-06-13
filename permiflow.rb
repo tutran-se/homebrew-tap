@@ -5,11 +5,11 @@
 class Permiflow < Formula
   desc "Permiflow is a Kubernetes RBAC scanning tool"
   homepage "https://github.com/tutran-se/permiflow"
-  version "0.7.2"
+  version "0.7.6"
 
   on_macos do
-    url "https://github.com/tutran-se/permiflow/releases/download/v0.7.2/permiflow_0.7.2_darwin_amd64.tar.gz"
-    sha256 "4e545d0955961a440b2372a1123db29c379587176ff59408febee8b7252ab148"
+    url "https://github.com/tutran-se/permiflow/releases/download/v0.7.6/permiflow_0.7.6_darwin_amd64.tar.gz"
+    sha256 "46ff8dbc13d0bfd87b1c70f477b1bb54689751df8bd80937b0cb25c67d7ed4ea"
 
     def install
       bin.install "permiflow"
@@ -29,8 +29,8 @@ class Permiflow < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/tutran-se/permiflow/releases/download/v0.7.2/permiflow_0.7.2_linux_amd64.tar.gz"
-        sha256 "fdf567a3cc758c8130b267f297abbdefeeeb9f0555124b827dff03b3450b9cc1"
+        url "https://github.com/tutran-se/permiflow/releases/download/v0.7.6/permiflow_0.7.6_linux_amd64.tar.gz"
+        sha256 "9fb738ef88a32d212029459d32a7a568f05885311bb0e0308f001c5618f0ceb8"
 
         def install
           bin.install "permiflow"
@@ -40,6 +40,6 @@ class Permiflow < Formula
   end
 
   test do
-    system "#{bin}/permiflow --version"
+    system "#{bin}/permiflow version"
   end
 end
