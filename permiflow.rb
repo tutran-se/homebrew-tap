@@ -5,11 +5,11 @@
 class Permiflow < Formula
   desc "Permiflow is a Kubernetes RBAC scanning tool"
   homepage "https://github.com/tutran-se/permiflow"
-  version "0.6.0"
+  version "0.7.2"
 
   on_macos do
-    url "https://github.com/tutran-se/permiflow/releases/download/v0.6.0/permiflow_0.6.0_darwin_amd64.tar.gz"
-    sha256 "b720d344b434513ac82c5df94af22c6c91fbb0c643470c175cd2e7a7b133cd6f"
+    url "https://github.com/tutran-se/permiflow/releases/download/v0.7.2/permiflow_0.7.2_darwin_amd64.tar.gz"
+    sha256 "4e545d0955961a440b2372a1123db29c379587176ff59408febee8b7252ab148"
 
     def install
       bin.install "permiflow"
@@ -29,8 +29,8 @@ class Permiflow < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/tutran-se/permiflow/releases/download/v0.6.0/permiflow_0.6.0_linux_amd64.tar.gz"
-        sha256 "f4df5895f22e95108fc0875e97a6793cfac40ab202b0b76dafb9eaa8a9d13d60"
+        url "https://github.com/tutran-se/permiflow/releases/download/v0.7.2/permiflow_0.7.2_linux_amd64.tar.gz"
+        sha256 "fdf567a3cc758c8130b267f297abbdefeeeb9f0555124b827dff03b3450b9cc1"
 
         def install
           bin.install "permiflow"
